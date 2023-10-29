@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.fr-aic {
+    display: flex;
+    align-items: center;
+}
+
+.create-issue-btn {
+    border: none;
+    background-color: transparent;
+    color: #65728A;
+    font-weight: 400;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.create-issue-btn:hover {
+    background-color: #DEE1EF;
+}
+
+.create-issue-btn>.material-icons {
+    font-size: 16px !important;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container {
+    min-width: min(250px, 90vw);
+    height: 400px;
+    background-color: #F4F5F7;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.container>p {
+    color: #65728A;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 95%;
+    padding-bottom: 30px;
+    border: 2px solid #2584FF;
+    resize: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.hide {
+    display: none;
+}
+
+.card {
+    background-color: white;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #182A4D;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px #182A4D9C;
+}
+
+.card > .material-icons {
+    cursor: pointer;
+    font-size: 17px !important;
+}

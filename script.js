@@ -40,7 +40,7 @@ function onEnterInput(e) {
         {
             return;
         }
-        console.log(issueName);
+        // console.log(issueName);
 
         // Create an issue card with the issueName
         const issueCard = document.createElement("div");
@@ -49,6 +49,9 @@ function onEnterInput(e) {
         <span>${issueName}</span>
         <span class="material-icons" onclick="deleteCard(this)">delete</span>
         `;
+
+        issueCard.draggable = true; //since issue cards needs to be draggable.
+        issueCard.addEventListener("dragstart", onDragStart);
 
         issueInput.value = "";
         todoContainer.appendChild(issueCard);
